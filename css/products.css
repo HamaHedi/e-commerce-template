@@ -1,0 +1,37 @@
+@import url('satoshi.css');
+@import url('clash-display.css');
+
+.products-header img {
+  width: 100%;
+}
+.product-filter-container {
+  display: flex;
+}
+#products-cards-container {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+.filters-container {
+  min-width: 150px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+.filters-container ul {
+  list-style: none;
+  padding: 0;
+}
+.filters-container p {
+  font-family: 'ClashDisplay-Regular';
+}
+.filters-container li {
+  font-family: 'Satoshi-Regular';
+
+  display: flex;
+  align-content: center;
+  gap: 3px;
+}

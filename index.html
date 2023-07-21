@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <title>ecommerce</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" type="text/css" href="css/home.css" />
+    <link rel="stylesheet" type="text/css" href="css/satoshi.css" />
+
+    <link rel="stylesheet" media="screen" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header-placeholder"></div>
+
+    <div class="banner_section layout_padding">
+      <div class="card-container">
+        <h3>Luxury homeware for people who love timeless design quality</h3>
+        <p>Shop the new Spring 2022 collection today</p>
+        <button class="card-button" id="btn">View collection</button>
+      </div>
+    </div>
+    <div class="brand-section">
+      <h3>What makes our brand different</h3>
+      <div id="cards-container"></div>
+      <div id="products-cards-container"></div>
+      <button class="card-button">View collection</button>
+    </div>
+    <div class="idea-section-container">
+      <div class="idea-container">
+        <h3>It started with a small idea</h3>
+        <p>
+          A global brand with local beginnings, our story begain in a small
+          studio in South London in early 2014
+        </p>
+        <button class="card-button">
+          <a href="products.html">View collection</a>
+        </button>
+      </div>
+      <img src="images/Image.png" />
+    </div>
+    <div class="newsletter-section">
+      <div class="text-container">
+        <h3>Join the club and get the benefits</h3>
+        <p>
+          Sign up for our newsletter and receive exclusive offers on new ranges,
+          sales, pop up stores and more
+        </p>
+        <div class="offer-lists-container">
+          <div class="offer-list-container">
+            <i class="fa-solid fa-circle-check" style="color: #ffffff"></i>
+            <p>Exclusive offers</p>
+          </div>
+          <div class="offer-list-container">
+            <i class="fa-solid fa-circle-check" style="color: #ffffff"></i>
+            <p>Free events</p>
+          </div>
+          <div class="offer-list-container">
+            <i class="fa-solid fa-circle-check" style="color: #ffffff"></i>
+            <p>Large discounts</p>
+          </div>
+        </div>
+      </div>
+      <div class="newsletter-email-container">
+        <div class="email-input-container">
+          <input placeholder="your@email.com" class="newsletter-email-input" />
+          <button type="button" class="newsletter-sign-button">Sign up</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="/javascript/homeData.js"></script>
+    <script src="/javascript/productData.js"></script>
+    <script src="/javascript/loadHeaderAndFooter.js"></script>
+  </body>
+  <script>
+    function showInputField() {
+      const searchInput = document.getElementById('searchInput');
+      searchInput.classList.toggle('show-input');
+    }
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      if (sidebar.style.left === '-290px') {
+        sidebar.style.left = '0';
+      } else {
+        sidebar.style.left = '-290px';
+      }
+    }
+    const button = document.getElementById('btn');
+    button.addEventListener('mouseover', function () {
+      button.style.left = `${Math.ceil(Math.random() * 60)}%`;
+      button.style.top = `${Math.ceil(Math.random() * 60)}%`;
+    });
+    button.addEventListener('click', function () {
+      alert('you clicked me');
+    });
+  </script>
+</html>

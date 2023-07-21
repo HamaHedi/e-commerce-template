@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+  </head>
+  <body>
+    <div class="sidebar" id="sidebar">
+      <ul>
+        <li>
+          <a href="index.html">Plant pots</a>
+        </li>
+        <li>
+          <a href="about.html">Ceramics</a>
+        </li>
+        <li>
+          <a href="gallery.html">Tables</a>
+        </li>
+        <li>
+          <a href="services.html">Chairs</a>
+        </li>
+        <li>
+          <a href="contact.html">Tableware</a>
+        </li>
+        <li>
+          <a href="contact.html">Cutlery</a>
+        </li>
+      </ul>
+    </div>
+    <div class="header_section">
+      <nav class="navbar">
+        <div class="navbar-header">
+          <div class="toggle-search-container">
+            <div class="search-container">
+              <i
+                id="search-icon"
+                class="fa-solid fa-magnifying-glass"
+                onclick="showInputField()"
+              ></i>
+
+              <input
+                type="text"
+                class="search-input"
+                id="searchInput"
+                placeholder="Search..."
+              />
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              onclick="toggleSidebar()"
+            >
+              <i class="fa-solid fa-bars" id="bars-icon"></i>
+            </button>
+          </div>
+          <div class="title">
+            <h3>Avion</h3>
+          </div>
+
+          <div class="cart-user-container">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-user"></i>
+          </div>
+        </div>
+
+        <hr class="divider" />
+
+        <div class="navbar-items">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Plant pots</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Ceramics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Tables</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Chairs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Tableware</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Cutlery</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>
